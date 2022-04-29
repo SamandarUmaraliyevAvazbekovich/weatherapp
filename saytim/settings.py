@@ -25,13 +25,14 @@ SECRET_KEY = 'django-insecure-mte&a@8fd)d0yh_^h1&&4)bh!e!uogq=)!v$x15-^wwj%v@&_*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['weatherapp617.herokuapp.com','localhost']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
